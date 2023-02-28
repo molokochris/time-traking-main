@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="icon" href="assets/images/logo/favicon-32x32.png">
+
+    <title>Time Tracking Main</title>
+</head>
+<body onload="showpopup()">
+    <main>
+        <div id="container">
+            <table>
+                <tr>
+                    <td id="control" >
+                    </td>
+                    <td id="display">
+                        <table>
+                            <tr id="rows">
+                                <!-- <td class="card">
+                                    <div style="background-color: rgba(255,139,100,255);" class="innerCard">
+                                        <div style="width: 100%; text-align: right; padding-right: 6%;">
+                                            <img src="assets/images/icons/icon-work.svg" alt="work-icon">
+                                        </div>
+                                    </div>
+                                    <div class="outerCard">
+                                        <span>
+                                            <table id="infoTab">
+                                                <tr>
+                                                    <td style="text-align: left; font-weight: bold;">
+                                                        Work
+                                                    </td>
+                                                    <td style="text-align: end;">
+                                                        <span>
+                                                            <img src="assets/images/icons/icon-ellipsis.svg" alt="">
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left; font-size: 50px;">
+                                                        5hrs
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left;">
+                                                        <p>Last Week</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="card">
+                                    <div style="background-color: rgba(86,194,230,255);" class="innerCard">
+                                        <div style="width: 100%; text-align: right; padding-right: 6%;">
+                                            <img src="assets/images/icons/icon-play.svg" alt="play-icon">
+                                        </div>
+                                    </div>
+                                    <div class="outerCard">
+                                        <span>
+                                            <table id="infoTab">
+                                                <tr>
+                                                    <td style="text-align: left; font-weight: bold;">
+                                                        Play
+                                                    </td>
+                                                    <td style="text-align: end;">
+                                                        <span>
+                                                            <img src="assets/images/icons/icon-ellipsis.svg" alt="">
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left; font-size: 50px;">
+                                                        5hrs
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left;">
+                                                        <p>Last Week</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="card">
+                                    <div style="background-color: rgba(255,94,125,255);" class="innerCard">
+                                        <div style="width: 100%; text-align: right; padding-right: 6%;">
+                                            <img src="assets/images/icons/icon-study.svg" alt="study-icon">
+                                        </div>
+                                    </div>
+                                    <div class="outerCard">
+                                        <span>
+                                            <table id="infoTab">
+                                                <tr>
+                                                    <td style="text-align: left; font-weight: bold;">
+                                                        Study
+                                                    </td>
+                                                    <td style="text-align: end;">
+                                                        <span>
+                                                            <img src="assets/images/icons/icon-ellipsis.svg" alt="">
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left; font-size: 50px;">
+                                                        5hrs
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left;">
+                                                        <p>Last Week</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="card">
+                                    <div style="background-color: rgba(75,206,130,255);" class="innerCard">
+                                        <div style="width: 100%; text-align: right; padding-right: 6%;">
+                                            <img src="assets/images/icons/icon-exercise.svg" alt="exercise-icon">
+                                        </div>
+                                    </div>
+                                    <div class="outerCard">
+                                        <span>
+                                            <table id="infoTab">
+                                                <tr>
+                                                    <td style="text-align: left; font-weight: bold;">
+                                                        Exercise
+                                                    </td>
+                                                    <td style="text-align: end;">
+                                                        <span>
+                                                            <img src="assets/images/icons/icon-ellipsis.svg" alt="">
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left; font-size: 50px;">
+                                                        5hrs
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left;">
+                                                        <p>Last Week</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="card">
+                                    <div style="background-color: rgba(114,53,209,255);" class="innerCard">
+                                        <div style="width: 100%; text-align: right; padding-right: 6%;">
+                                            <img src="assets/images/icons/icon-social.svg" alt="social-icon">
+                                        </div>
+                                    </div>
+                                    <div class="outerCard">
+                                        <span>
+                                            <table id="infoTab">
+                                                <tr>
+                                                    <td style="text-align: left; font-weight: bold;">
+                                                        Social
+                                                    </td>
+                                                    <td style="text-align: end;">
+                                                        <span>
+                                                            <img src="assets/images/icons/icon-ellipsis.svg" alt="">
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left; font-size: 50px;">
+                                                        5hrs
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left;">
+                                                        <p>Last Week</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </td>
+                                <td class="card">
+                                    <div style="background-color: rgba(240,199,91,255);" class="innerCard">
+                                        <div style="width: 100%; text-align: right; padding-right: 6%;">
+                                            <img src="assets/images/icons/icon-self-care.svg" alt="self-care_icon">
+                                        </div>
+                                    </div>
+                                    <div class="outerCard">
+                                        <span>
+                                            <table id="infoTab">
+                                                <tr>
+                                                    <td style="text-align: left; font-weight: bold;">
+                                                        Self Care
+                                                    </td>
+                                                    <td style="text-align: end;">
+                                                        <span>
+                                                            <img src="assets/images/icons/icon-ellipsis.svg" alt="">
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left; font-size: 50px;">
+                                                        5hrs
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2" style="text-align: left;">
+                                                        <p>Last Week</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </span>
+                                    </div>
+                                </td> -->
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div id="showpopup">
+        <div id="pop_info">
+            <span class="close" onclick="closepop()">&times;</span>
+            <br><br>
+            <h2>Please enter your email to continue:</h2>
+            <input type="email" id="email_input">
+            <br><br>
+            <button onclick="submitEmail()">Submit</button>
+            <div id="success">
+                <h4>Thank you, your email has been sent.</h4>
+                <img style="background-color: green;" src="assets/images/icons/success.svg" alt="">
+            </div>
+            <div id="fail">
+                <h4>Please check your email, and try again.</h4>
+                <img style="background-color: red;" src="assets/images/icons/fail.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <footer>
+        Created by Moloko Chris Poopedi &copy;
+    </footer>
+    <script>
+        function showpopup() {
+            document.getElementById('showpopup').style.display = 'block';
+            document.getElementById('success').style.display = 'none';
+            document.getElementById('fail').style.display = 'none';
+            printCards();
+            userInfo();
+            // document.getElementById('secondUser').style.display = 'none';
+        }
+        function closepop() {
+            document.getElementById('showpopup').style.display = 'none';
+        }
+        function submitEmail() {
+            const email = document.getElementById('email_input').value;
+
+            // emailSuccess();
+            emailFail();
+            // closepop();
+        }
+        function emailSuccess() {
+            document.getElementById('success').style.display = 'block';
+        }
+        function emailFail() {
+            document.getElementById('fail').style.display = 'block';
+        }
+    </script>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>
