@@ -229,7 +229,8 @@
             <span class="close" onclick="closepop()">&times;</span>
             <br><br>
             <h2>Please enter your email to continue:</h2>
-            <input type="email" id="email_input">
+            <input id="name" type="text" placeholder="name" />
+            <input type="email" id="email">
             <br><br>
             <button onclick="submitEmail()">Submit</button>
             <div id="success">
@@ -258,10 +259,23 @@
             document.getElementById('showpopup').style.display = 'none';
         }
         function submitEmail() {
-            const email = document.getElementById('email_input').value;
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            fetch('https://fascinating-gumdrop-6def11.netlify.app/?name=' + name + '&email=' + email)
+                .then(res => {
+                    if (res.ok) {
+                        console.log('Success');
+                        emailSuccess();
+                    } else {
+                        console.log('Error');
+                        emailFail();
+                    }
+                })
+                .catch(error => console.error(error));
 
             // emailSuccess();
-            emailFail();
+            // emailFail();
             // closepop();
         }
         function emailSuccess() {
