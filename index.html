@@ -229,7 +229,7 @@
             <span class="close" onclick="closepop()">&times;</span>
             <br><br>
             <h2>Please enter your email to continue:</h2>
-            <input id="name" type="text" placeholder="name" />
+            <input id="name" type="text">
             <input type="email" id="email">
             <br><br>
             <button onclick="submitEmail()">Submit</button>
@@ -273,7 +273,7 @@
                     }
                 })
                 .catch(error => console.error(error));
-
+                console.log(name);
             // emailSuccess();
             // emailFail();
             // closepop();
